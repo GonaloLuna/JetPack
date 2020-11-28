@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".uno"
+    android:background="#3498DB ">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menú Principal"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/botonB"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Buscador"
+            android:textSize="40dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/boton_redondeado"></Button>
+        <Button
+            android:id="@+id/botonCam"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Cámara"
+            android:textSize="40dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/boton_redondeado"></Button>
+        <Button
+            android:id="@+id/botonCal"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textSize="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/boton_redondeado"></Button>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

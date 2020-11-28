@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/uno">
+
+
+    <fragment
+        android:id="@+id/uno"
+        android:name="com.example.jetpack.uno"
+        android:label="fragment_uno"
+        tools:layout="@layout/fragment_uno" >
+        <action
+            android:id="@+id/action_uno_to_dos"
+            app:destination="@id/dos" />
+        <action
+            android:id="@+id/action_uno_to_tres"
+            app:destination="@id/tres" />
+        <action
+            android:id="@+id/action_uno_to_cuatro"
+            app:destination="@id/cuatro" />
+    </fragment>
+    <fragment
+        android:id="@+id/dos"
+        android:name="com.example.jetpack.dos"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" />
+    <fragment
+        android:id="@+id/tres"
+        android:name="com.example.jetpack.tres"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" />
+    <fragment
+        android:id="@+id/cuatro"
+        android:name="com.example.jetpack.cuatro"
+        android:label="fragment_cuatro"
+        tools:layout="@layout/fragment_cuatro" >
+        <action
+            android:id="@+id/action_cuatro_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.jetpack.result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>
